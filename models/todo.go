@@ -8,12 +8,12 @@ type Todo struct {
 }
 
 type CreateTodo struct {
-	Title       string `json:"title" binding:"required"`
+	Title       string `json:"title"`
 	Description string `json:"description"`
-	Status      bool   `json:"status" binding:"required"`
+	Status      bool   `json:"status"`
 }
 
 type UpdateTodo struct {
-	ID     int  `json:"id" binding:"required"`
-	Status bool `json:"status" binding:"required"`
+	ID     int  `json:"id"`
+	Status bool `json:"status"`
 }
